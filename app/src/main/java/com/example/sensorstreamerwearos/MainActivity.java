@@ -54,7 +54,7 @@ public class MainActivity extends WearableActivity implements SensorEventListene
 
     // random
     private String TAG = "UDP";
-    private String SERVER = "192.168.1.18"; // macM1
+    private String SERVER = "192.168.1.18"; // change to your IP
     private int PORT = 5005;
     private InetAddress serverAddress;
     private DatagramSocket socket;
