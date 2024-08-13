@@ -54,7 +54,7 @@ public class MainActivity extends WearableActivity implements SensorEventListene
 
     // random
     private String TAG = "UDP";
-    private String SERVER = "192.168.0.175"; // tplink5g
+    private String SERVER = "192.168.1.18"; // macM1
     private int PORT = 5005;
     private InetAddress serverAddress;
     private DatagramSocket socket;
@@ -132,7 +132,7 @@ public class MainActivity extends WearableActivity implements SensorEventListene
 
         // setup and register various sensors
         mSensors.put("acce", mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER));
-        // mSensors.put("gyro", mSensorManager.getDefaultSensor(Sensor.TYPE_GYROSCOPE));
+        mSensors.put("gyro", mSensorManager.getDefaultSensor(Sensor.TYPE_GYROSCOPE));
         // mSensors.put("rotvec", mSensorManager.getDefaultSensor((Sensor.TYPE_ROTATION_VECTOR)));
         // mSensors.put("mag", mSensorManager.getDefaultSensor(Sensor.TYPE_MAGNETIC_FIELD));
 
